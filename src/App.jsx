@@ -1,35 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main className="relative">
+      <nav>Nav</nav>
+      <section className="xl:padding-1 wide:padding-r padding-b">Hero</section>
+      <section className="padding">Popular Products</section>
+      <section className="padding">Super Quality</section>
+      <section className="padding-x py-10">Services</section>
+      <section className="padding">Special Offer</section>
+      <section className="bg-pale-blue padding">Customer Reviews</section>
+      <section className="padding-x sm:py-32 py-16 w-full">Subscribe</section>
+      <footer className="bg-black padding-x  padding-t pb-8">Footer</footer>
+    </main>
+  );
+};
 
-export default App
+export default App;
