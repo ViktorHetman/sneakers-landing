@@ -23,7 +23,7 @@ const SuperQuality = () => {
           Our dedication to details and excellence ensures your satisfaction
         </p>
         <div className="mt-11">
-          <Button label="View more" />
+          <Button label="View more" translate={true} />
         </div>
       </div>
 
